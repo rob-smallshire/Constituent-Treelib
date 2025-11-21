@@ -217,7 +217,10 @@ This is especially helpful when investigating the writing style of authors.
 
 <a name="Export_visualization"></a>
 ### Export the tree
-CTL offers you to export a constituent tree into various file formats, which are listed below. Most of these formats result in a visualization of the tree, while the remaining file formats are used for data exchange. 
+CTL offers you to export a constituent tree into various **file formats**, which are listed below. Most of these formats result in a visualization of the tree, while the remaining file formats are used for data exchange. 
+
+<details>
+<summary><strong>Show supported file formats...</strong></summary>
 
 | Extension | Description | Output |
 | --- | --- | --- |
@@ -235,6 +238,8 @@ CTL offers you to export a constituent tree into various file formats, which are
 | **TXT** | *Plain-Text* | Pretty-print text visualization|
 | **TEX** | *LaTeX-Document* | LaTeX-typesetting |
 
+</details>
+
 The following example shows an export of the tree into a PDF file:
 
 ```python
@@ -250,9 +255,14 @@ In the case of raster/vector images, CTL automatically removes unnecessary margi
 ## Available models and languages
 CTL currently supports eight languages: English, German, French, Polish, Hungarian, Swedish, Chinese and Korean. The performance of the respective models can be looked up in the <a href="https://github.com/nikitakit/self-attentive-parser#available-models">benepar repository</a>. 
 
+## CTL in the Research Landscape 
+CTL has been used in several research works published at leading conferences, including EMNLP 2025, ICLR 2024 and ACL 2024:
 
-## CTL in the Research Landscape
-CTL has been used in several research works that have appeared at renowned conferences such as ICLR 2024 and ACL 2024:
+- Meinan Liu, Yunfang Dong, Xixian Liao, and Bonnie Webber. 2025. **[Multi-token Mask-filling and Implicit Discourse Relations](https://aclanthology.org/2025.findings-emnlp.670/)**. In Findings of the Association for Computational Linguistics: EMNLP 2025, pages 12546–12560, Suzhou, China. Association for Computational Linguistics.
+
+- Mulligan, Karl, and Kyle Rawlins. **[Analyzing naturally-sourced Questions Under Discussion](https://journals.linguisticsociety.org/proceedings/index.php/ELM/article/view/5828)**. Experiments in Linguistic Meaning, vol. 3, 24 Jan 2025. 
+
+-  Judita Preiss **[Hybrid Approach to Literature-Based Discovery: Combining Traditional Methods with LLMs](https://www.mdpi.com/2076-3417/15/16/8785/pdf?version=1754653754)**. Appl. Sci. 2025, 15, 8785. 
 
 - Yuang Li, Jiaxin Guo, Min Zhang, Ma Miaomiao, Zhiqiang Rao, Weidong Zhang, Xianghui He, Daimeng Wei, and Hao Yang. 2024. **[Pause-Aware Automatic Dubbing using LLM and Voice Cloning](https://aclanthology.org/2024.iwslt-1.2/)**. In Proceedings of the 21st International Conference on Spoken Language Translation (IWSLT 2024), pages 12–16, Bangkok, Thailand (in-person and online). Association for Computational Linguistics.
 
@@ -267,13 +277,13 @@ The code and the <a href="https://github.com/Halvani/Constituent-Treelib/blob/ma
 If you find this repository helpful, please invest a few minutes and cite it in your paper/project:
 ```bibtex
 @software{Halvani_Constituent_Treelib:2024,
-	author = {Halvani, Oren},
-	title = {{Constituent Treelib - A Lightweight Python Library for Constructing, Processing, and Visualizing Constituent Trees.}},
-	doi = {10.5281/zenodo.10951644},
-	month = apr,	
-	url = {https://github.com/Halvani/constituent-treelib},
+	author  = {Halvani, Oren},
+	title   = {{Constituent Treelib - A Lightweight Python Library for Constructing, Processing, and Visualizing Constituent Trees.}},
+	doi     = {10.5281/zenodo.10951644},
+	month   = apr,	
+	url     = {https://github.com/Halvani/constituent-treelib},
 	version = {0.0.7},
-	year = {2024}
+	year    = {2024}
 }
 ```
 Please also give credit to the authors of benepar and <a href="https://github.com/nikitakit/self-attentive-parser#citation">cite their work</a>. In science, the principle is: **give and take**..
